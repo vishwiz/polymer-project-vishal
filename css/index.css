@@ -1,0 +1,586 @@
+@media only screen and (max-width:768px) {
+    .nav-bar-section {
+        display: none;
+    }
+
+    .product-display-section img {
+        height: 200px !important;
+    }
+
+    .sidebar img {
+        visibility: visible !important;
+    }
+
+    .product-display-section-button input {
+        width: 170px !important;
+    }
+
+    /* list css */
+    .list-mens-outerwear {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    /*product css */
+    .product-details {
+        display: grid;
+        grid-template-rows: 55% 35%;
+        padding: 15px;
+    }
+
+    .product-description-button input {
+        width: 100% !important;
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        background-color: #000066 !important;
+        color: white;
+        height: 70px;
+    }
+
+    .product-description-button {
+        padding-top: 5em;
+    }
+
+    .section {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .list-footer,
+    .checkout-footer {
+        display: none;
+    }
+
+    /* cart css */
+    .close-button {
+        flex-direction: column;
+    }
+
+    .close-button-sign {
+        align-self: flex-end;
+        order: 1;
+    }
+
+    .cart-info {
+        order: 2;
+    }
+
+    .header-section-cart-text {
+        margin-top: 0 !important;
+    }
+
+    .total-cost input {
+        display: none;
+    }
+
+    .bottom-checkout-button input {
+        visibility: visible !important;
+
+    }
+
+    /* checkout css */
+    .date-section select {
+        width: 29%;
+    }
+     .checkout-section{
+         padding-right: 20px;
+         padding-left: 20px;
+     }
+    .place-order input {
+        width: 100% !important;
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        background-color: #000066 !important;
+        color: white;
+        height: 70px;
+    }
+
+    .place-order {
+        margin-top: 10em;
+    }
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    border: 0;
+}
+a{
+    color : black;
+    text-decoration: none
+}
+
+.header-section {
+    display: flex;
+}
+
+.header-section-text {
+    flex-basis: 95%;
+}
+
+.header-section-cart {
+    flex-basis: 5%;
+
+}
+
+.sidebar {
+    flex-basis: 5%;
+}
+
+.sidebar img {
+    flex-basis: 5%;
+    width: 30px;
+    padding: 10px 15px 5px 14px;
+    visibility: hidden;
+
+}
+
+.header-section-text h1 {
+    text-align: center;
+    flex-basis: 95%;
+    letter-spacing: 12px;
+    font-size: 18px;
+
+}
+
+.header-section-cart img {
+    width: 30px;
+    padding: 10px 15px 5px 14px;
+}
+
+section {
+    max-width: 1400px;
+    margin: auto;
+    height: auto;
+}
+
+.nav-bar-section ul {
+    display: flex;
+    justify-content: center;
+
+}
+
+.nav-bar-section li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-bar-section li {
+    list-style-type: none;
+    min-width: 120px;
+    font-size: 13px;
+}
+
+.product-display-section {
+    padding-bottom: 15px;
+    object-fit: cover;
+
+}
+
+.product-display-section img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+
+
+}
+
+.content-text {
+    text-align: center;
+    font-size: 17px;
+    padding-top: 30px;
+    padding-bottom: 25px;
+}
+
+.product-display-section-button {
+    text-align: center;
+    padding-bottom: 22px;
+}
+
+.product-display-section-button input {
+    border: 2px solid black;
+    padding: 15px;
+    font-size: 15px;
+    width: 206px;
+    background: none;
+}
+
+.product-display-section-split {
+    display: flex;
+
+}
+
+.split {
+    flex-basis: 50%;
+}
+
+.split img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+footer {
+    margin-top: 15em;
+    text-align: center;
+
+}
+
+footer h4 {
+    color: #888383;
+    font-weight: 100;
+}
+
+footer input {
+    border: none;
+    padding: 15px;
+    font-size: 11px;
+    width: 126px;
+    background: black;
+    color: white;
+
+}
+
+/* list css */
+.list-mens-outerwear {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.wrapper img {
+    margin: 15px 0px 15px 0px;
+    object-fit: cover;
+    width: 80%;
+}
+
+.wrapper h4 {
+    margin-bottom: 0;
+    font-size: 15px;
+}
+
+.wrapper h5 {
+    margin-top: 0;
+    font-weight: 100;
+    color: #888383;
+}
+
+/* product css */
+@media only screen and (min-width:767px) {
+    .product-details {
+        display: grid;
+        grid-template-columns: 55% 35%;
+    }
+
+    /* checkout css */
+    .checkout-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.product-wrapper {
+    text-align: right;
+
+}
+
+.product-wrapper img {
+    max-width: 100%;
+
+}
+
+.product-features h2 {
+
+    font-weight: 100;
+    text-overflow: ellipsis;
+}
+
+.product-features h4,
+.product-features li {
+
+    font-weight: 100;
+    color: #888383;
+}
+
+.cloth-size {
+    position: relative;
+}
+
+.cloth-size select,
+.cloth-quantity select {
+    width: 90%;
+    background: none;
+    text-indent: 100px;
+    font-size: 15px;
+    height: 63px;
+    border-right: none;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-left: none;
+    outline: none;
+}
+
+.cloth-size label,
+.cloth-quantity label {
+    position: absolute;
+    font-size: 15px;
+    color: #888383;
+    margin-top: 24px;
+    z-index: -1;
+}
+
+.product-description h2 {
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+.product-description p {
+
+    font-weight: 100;
+    text-overflow: ellipsis;
+    color: #888383;
+}
+
+
+.product-description-button input {
+    border: 2px solid black;
+    padding: 15px;
+    background: none;
+    width: 250px;
+}
+
+.product-description-button {
+    margin-top: 47px;
+}
+
+/* cart css */
+
+.header-section-cart-text {
+    margin-top: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-section-cart-text h3 {
+    font-weight: 200;
+}
+
+.header-section-cart-text h4 {
+    font-weight: 100;
+    color: grey;
+}
+
+
+.cart {
+    display: flex;
+}
+
+.cart-image {
+    min-width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.cart-image img {
+    width: 72px;
+    height: 72px;
+    padding-left: 30px;
+}
+
+.cart-image-text h3 {
+    min-width: 210px;
+    font-size: 18px;
+    padding-left: 1em;
+    font-weight: 100;
+}
+
+.cart-info {
+    min-width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.close-button {
+    flex-basis: 50%;
+    display: flex;
+}
+
+.select-qty select {
+    min-width: 100%;
+    text-indent: 30px;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.select-qty {
+    position: relative;
+    padding-top: 1.3em;
+    min-width: 58px;
+
+}
+
+.select-qty label {
+    position: absolute;
+    color: grey;
+    z-index: -1;
+}
+
+
+.cart-info-size h3,
+.cart-info-cost h3 {
+    font-size: 1em;
+    font-weight: 100;
+    padding-top: 8px;
+    color: grey;
+}
+
+.close-button-sign {
+    width: 5%;
+    font-size: 1.5em;
+    padding: 20px;
+}
+
+.total-cost {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.total-cost h4 {
+    padding-right: 30px;
+}
+
+.total-cost input {
+    background: none;
+    width: 230px;
+    height: 53px;
+    outline: none;
+    border: 1px solid black;
+}
+
+.bottom-checkout-button input {
+    min-width: 100%;
+    visibility: hidden;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    background-color: #000066;
+    color: white;
+    height: 70px;
+}
+
+.bottom-checkout-button {
+    margin-top: 100px;
+}
+
+/* checkout css */
+
+.account-info,
+.payment-info {
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+
+}
+
+.info {
+    border: none;
+    border-bottom: 1px solid grey;
+    height: 5em;
+    font-size: 1em;
+    outline: none;
+    min-width: 100%;
+}
+
+.date-select select,
+.account-info select {
+    background: none;
+    outline: none;
+    border-bottom: 1px solid grey;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-size: 1em;
+
+
+}
+
+.account-info label {
+    padding-top: 24px;
+    font-size: 1em;
+}
+
+.state-info {
+    display: flex;
+}
+.state-info div{
+    width:50%;
+}
+.state-info input{
+    border: none;
+    border-bottom: 1px solid grey;
+    height: 5em;
+    font-size: 1em;
+    outline: none;
+    min-width: 95%;
+}
+
+.checkbox {
+    display: flex;
+    padding-bottom: 1em;
+}
+
+.checkbox input {
+    width: 20px;
+    height: 22px;
+
+}
+
+.checkbox div {
+    align-self: center;
+    padding-left: 5px;
+}
+
+.date-select {
+    display: flex;
+    justify-content: space-between;
+}
+
+.date-select input {
+    border: none;
+    border-bottom: 1px solid grey;
+    height: 5em;
+    font-size: 1em;
+    outline: none;
+    width: 33%;
+}
+
+.date-select select {
+    width: 30%;
+}
+
+.order-summary {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-summary h4 {
+    font-weight: 100;
+}
+
+.place-order input {
+    background: none;
+    width: 230px;
+    outline: none;
+    border: 1px solid black;
+    height: 59px;
+}
