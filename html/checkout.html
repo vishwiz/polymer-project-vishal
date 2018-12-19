@@ -32,16 +32,36 @@
     <section class="checkout-section">
         <form class="account-info">
             <h3>Account Information</h3>
-            <input class="info" type="text" placeholder="Email">
-            <input class="info" type="text" placeholder="Phone Number">
+            <div class="text-animation">      
+                <input type="text" required>
+                <label>Name</label>
+              </div>
+              <div class="text-animation">      
+                <input type="text" required>
+                <label>Phone Number</label>
+              </div>
             <h3>Shipping Address</h3>
-            <input class="info" type="text" placeholder="Address">
-            <input class="info" type="text" placeholder="City">
+            <div class="text-animation">      
+                <input type="text" required>
+                <label>Address</label>
+              </div>
+              <div class="text-animation">      
+                <input type="text" required>
+                <label>City</label>
+              </div>
             <div class="state-info">
-                <div> <input type="text" placeholder="State/Province"></div>
-                <div> <input type="text" placeholder="Zip/Postal Code"></div>
+                <div class="text-animation">      
+                    <input type="text" required>
+
+                    <label>Name</label>
+                  </div>
+                  <div class="text-animation">      
+                    <input type="text" required>
+
+                    <label>Name</label>
+                  </div>
             </div>
-            <label>Country</label>
+            <div>Country</div>
             <select class="country-select">
                 <option>India</option>
                 <option>Aidni</option>
@@ -56,9 +76,15 @@
 
         <form class="payment-info">
             <h3>Payment Method</h3>
-            <input class="info" type="text" placeholder="Cardholder Name">
-            <input class="info" type="text" placeholder="Cardholder Name">
-            <div class="date-select">
+            <div class="text-animation">      
+                <input type="text" required>
+                <label>Cardholder Name</label>
+              </div>
+              <div class="text-animation">      
+                <input type="text" required>
+                <label>Card Number</label>
+              </div>
+            <div class="date-select" >
                 <select>
                     <option>January</option>
                     <option>Feburary</option>
@@ -67,7 +93,11 @@
                     <option>January</option>
                     <option>Feburary</option>
                 </select>
-                <input type="text" placeholder="CVV">
+                <div class="text-animation" id="text-animation-input">      
+                    <input type="text"  required>
+
+                    <label>Card Number</label>
+                  </div>
             </div>
             <h3>Order Summary</h3>
             <div class="order-summary">

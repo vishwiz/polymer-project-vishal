@@ -82,10 +82,12 @@
     .date-section select {
         width: 29%;
     }
-     .checkout-section{
-         padding-right: 20px;
-         padding-left: 20px;
-     }
+
+    .checkout-section {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
     .place-order input {
         width: 100% !important;
         position: fixed;
@@ -106,8 +108,9 @@ body {
     margin: 0;
     border: 0;
 }
-a{
-    color : black;
+
+a {
+    color: black;
     text-decoration: none
 }
 
@@ -507,32 +510,36 @@ footer input {
     border-top: none;
     border-right: none;
     border-left: none;
-    padding-top: 15px;
-    padding-bottom: 10px;
+    padding-top: 1.1em;
+    padding-bottom: 1em;
     font-size: 1em;
 
 
 }
-
-.account-info label {
+/* .account-info label{
     padding-top: 24px;
+    font-size: 1em;
+} */
+.country-label {
+    padding-top: 2.4em;
     font-size: 1em;
 }
 
 .state-info {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1.2%;
 }
-.state-info div{
-    width:50%;
-}
-.state-info input{
+
+
+/* .state-info input {
     border: none;
     border-bottom: 1px solid grey;
     height: 5em;
     font-size: 1em;
     outline: none;
     min-width: 95%;
-}
+} */
 
 .checkbox {
     display: flex;
@@ -551,22 +558,23 @@ footer input {
 }
 
 .date-select {
-    display: flex;
-    justify-content: space-between;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-column-gap: 2.5%;
 }
 
-.date-select input {
+/* .date-select input {
     border: none;
     border-bottom: 1px solid grey;
     height: 5em;
     font-size: 1em;
     outline: none;
     width: 33%;
-}
+} */
 
-.date-select select {
+/* .date-select select {
     width: 30%;
-}
+} */
 
 .order-summary {
     display: flex;
@@ -577,10 +585,53 @@ footer input {
     font-weight: 100;
 }
 
-.place-order input {
+.place-order  input {
     background: none;
     width: 230px;
     outline: none;
     border: 1px solid black;
     height: 59px;
 }
+/* animation setup */
+
+.text-animation  { 
+    position:relative; 
+    margin-bottom:1em; 
+  }
+  .text-animation input {
+    font-size: 1.8em;
+    padding-top: 1em;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #757575;
+  }
+  input:focus 		{ outline:none; }
+  
+  /* LABEL ======================================= */
+  .text-animation label 				 {
+    color:grey; 
+    font-size:18px;
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    left:5px;
+    top:32px;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+  }
+  
+  /* active state */
+  input:focus ~ label,input:valid ~ label{
+    top:-2px;
+    font-size:1em;
+    color:grey;
+  }
+  
+  .text-animation input:focus{
+      border-bottom:2px solid black;
+  }
+  #text-animation-input{
+      margin:0;
+  }
